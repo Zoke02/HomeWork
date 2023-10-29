@@ -1,0 +1,49 @@
+.hero-image {
+    width: 100%;
+}
+main, header {
+    text-align: center;
+}
+.article-image {
+    width: 100%;
+    border-radius: 1%;
+}
+.article {
+    margin: 2%;
+    width: 280px;
+    float: left;
+}
+.data_protection, .cookies {
+    width: 600px;
+    margin: 10px;
+    float: left;
+}
+
+.data_protection p, .cookies p, .condition_of_use p {
+    text-align: left;
+    border: 10px;
+}
+
+.impressum_table {
+    text-align: left;
+    border: 1px solid rgb(99, 105, 217);
+    border-left: 0px;
+    border-right: 0px;
+    margin: 35px;
+    border-collapse: collapse;
+}
+.impressum_table td {
+    padding: 15px;
+}
+.impressum_table th {
+    padding: 15px;
+    font-style: italic;
+}
+
+tr:nth-child(odd) {
+    background-color: #b0d2f0;
+}
+
+tr:nth-child(even) {
+    background-color: #5c93c4;
+}
