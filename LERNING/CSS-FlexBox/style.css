@@ -1,0 +1,28 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    border: 3px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 85vh;
+}
+
+.box {
+    flex-basis: 20rem;
+    flex-grow: 1; /* Default 0 */
+    flex-shrink: 1; /* Default 0 */
+    flex: 1 1 15rem; /* First Grow then Shrink then Basis, First Grow then Basis */
+    width: 5rem;
+    height: 5rem;
+    background-color: lightseagreen;
+    margin: 1rem;
+}
+
+.box:first-child {
+    flex-shrink: 0;
+}

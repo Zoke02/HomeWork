@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background: lightgreen;
+    padding: 1rem;
+}
+
+.box:nth-last-of-type(2) {
+    background: lightgoldenrodyellow;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+    .box {
+        background: lightcoral;
+    }
+}

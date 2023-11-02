@@ -9,9 +9,9 @@ main, header {
     border-radius: 1%;
 }
 .article {
-    margin: 2%;
-    width: 280px;
-    float: left;
+    position: relative;
+    left: 1rem;
+    right: 1rem;
 }
 .data_protection, .cookies {
     width: 600px;

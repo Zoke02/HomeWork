@@ -1,0 +1,50 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    /* 3 x 2 */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* grid-template-columns: repeat(2, 100px); */
+    /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
+    grid-template: 100px auto 100px / 30fr 70fr;
+    grid-template-areas: 
+        "header     header" 
+        "sidebar    main" 
+        "sidebar    footer"; /* "." for a empty cell */
+    border: 5px solid lightcoral;
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+    gap: 10px; /* RowGap then ColumnGap / 1 Value = Both */
+    /* justify-items: stretch;          /* DefaultValue = stretch( other center/start/end) / Centers the Horizontal Axis */  
+    /* align-items: stretch;            DefaultValue = stretch / Centers the Vertical Axis */
+    /* justify-content: center;     /* Centers the Grid inside the Container horizontaly */
+    /* align-content: center;       /*Centers the grid inside the Container verticly  */
+    height: 100vh;
+}
+
+.box {
+    /* height: 5rem; */
+    /* width: 5rem; */
+    background-color: lightseagreen;
+}
+
+.box-one {
+    /* grid-column: 1 / 3; /* Start of line / End of line , -1(Last Column) , "span 2"(How many Cells) */
+    /* grid: 1 / 1 / 1 / 3; /* Row/Colum to Row/Column */
+    grid-area: header; /* same as 2 lines above */
+}
+
+.box-two {
+    grid-area: sidebar;
+}
+
+.box-four {
+    grid-area: footer;
+}
+
+.hidden {
+    display: none; /* invisible and no space */
+    visibility: hidden; /* invisible with space */
+}
