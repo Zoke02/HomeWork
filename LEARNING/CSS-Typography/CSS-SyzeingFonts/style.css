@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+    /* font-size: 16px; This is default,dont do it or it changes persons browser settings */
+}
+
+body {
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", Helvetica, sans-serif
+}
+
+h1 {
+    font-size: 4.209rem;
+}
+h2 {
+    font-size: 3.157rem;
+}
+
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: 100%
+    }
+}
