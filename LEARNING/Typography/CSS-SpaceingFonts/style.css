@@ -1,0 +1,26 @@
+html {
+    font-family: "Roboto", Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1rem;
+    /* General Line Hight is 1.5 rem */
+    /* Line Hight without means (multiplyer) u wont need to change line hight when u change font size */
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    word-spacing: 0.8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -1px;
+}
+
+h1 {
+    /* TopRightBottomLeft */
+    margin: 3rem 0 1rem;
+}
+
+p {
+    /* 50ch means 50 x "0" */
+    /* This controls the ammount of letters of a line */
+    width: 50ch;
+}
