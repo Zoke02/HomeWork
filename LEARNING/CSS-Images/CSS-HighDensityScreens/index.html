@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>High Density Screens</title>
-    <link
-      rel="stylesheet"
-      href="style.css" />
-  </head>
-  <body>
-    <img
-      src="../Images/meal.jpg"
-      alt="A bowl of salmon and curry."
-      class="meal"
-      srcset="../Images/mean.jpg 1x, ../Images/meal@2x.jpg 2x, ../Images/meal@3x.jpg 3x" />
-    <!-- srcset for diferit sizes screen, logical density = behavier , phisical resolution is amount of pixes inside.
-    CSS is based on the logical rezolution. -->
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>High Density Screens</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<img
+			src="../Images/meal.jpg"
+			alt="A bowl of salmon and curry."
+			class="meal"
+			srcset="../Images/mean.jpg 400w, ../Images/meal@2x.jpg 800w, ../Images/meal@3x.jpg 1200w"
+			sizes="
+      (max-width=500px) 100vw,
+      (max-width=700px) 50vw,
+      (max-width=900px) 33vw,
+
+      " />
+		<!-- srcset for diferit sizes screen, logical density = behavier , phisical resolution is amount of pixes inside.
+    CSS is based on the logical rezolution. 1x, 2x 3x, -->
+	</body>
 </html>
