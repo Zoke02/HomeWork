@@ -1,0 +1,8 @@
+body {
+    background-image: url(../Images/bg-sanfrancisco.jpg);
+    background-repeat: no-repeat; /*u can repeat-x or repeat-y.*/
+    background-position: 100%; /*100px; Move Image-Horisontaly and Verticaly. */
+    background-size: cover;
+    height: 300vh; /*Body is a block object and the hight adjust to content.*/
+    background-attachment: fixed; /*Background fixed relative to viewport.*/
+}
