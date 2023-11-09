@@ -5,3 +5,8 @@ body {
 .ufo {
     width: 100px;
 }
+
+.icon {
+    font-size: 5rem;
+    color: crimson;
+}
