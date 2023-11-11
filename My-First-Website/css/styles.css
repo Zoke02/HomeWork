@@ -1,8 +1,14 @@
 @font-face {
     font-family: Roboto;
-    src: url(fonts/roboto-regular.woff2);
+    src: url(fonts/roboto-regular.woff2) format('woff2');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/roboto-bold.woff2) format('woff2');
+    font-weight: normal;
+    font-style: bold;
 }
 
 html * {
@@ -214,7 +220,7 @@ footer {
 
     .wrapper {
         max-width: 957px;
-        margin: 0 auto;
+        margin-inline: auto;
         overflow: visible;
     }
 
@@ -265,9 +271,12 @@ footer {
         background-position: center;
         position: relative;
         top: 4.4rem;
+        left: auto;
+        width: 100%;
         height: 65vh;
         visibility: visible;
         z-index: -10;
+        overflow: hidden;
     }
     #main-header {
         background-image: none;
