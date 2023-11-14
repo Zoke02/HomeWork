@@ -6,6 +6,8 @@ html,body {
 
 header {
     background: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -19,9 +21,14 @@ header {
 
 header h1 {
     font-size: 5rem;
+    word-spacing: 1rem;
     text-shadow: 0.2rem 0.2rem black
 }
 
 header p {
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 3rem;
+    word-spacing: 1rem;
+    padding: 1.5rem;
+
 }
