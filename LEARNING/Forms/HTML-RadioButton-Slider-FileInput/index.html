@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Radio Button</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+        />
+    </head>
+    <body>
+        <form>
+            <div>
+                <input type="radio" name="membership" id="silver" disabled />
+                <label for="silver" class="label-inline">Silver</label>
+            </div>
+            <div>
+                <input type="radio" name="membership" id="gold" checked />
+                <label for="gold" class="label-inline">Gold</label>
+            </div>
+            <input type="range" min="0" max="100" value="90" />
+            <input class="container" type="file" multiple accept=".jpg, .png" />
+            <input class="container" type="file" multiple accept="image/*" />
+            <input class="container" type="file" multiple accept="video/*" />
+            <input class="container" type="file" multiple accept="audio/*" />
+        </form>
+    </body>
+</html>
