@@ -1,0 +1,59 @@
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bg-menu: #2a2138;
+    --bg-menu-hover: #221a2e;
+    --bg-menu-active: #221a2e;
+}
+
+.nav-bar {
+    width: 100vw;
+    background-color: var(--bg-menu);
+}
+
+.nav-bar ul {
+    padding: 0;
+}
+
+.nav-bar li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.nav-bar li {
+    background-color: var(--bg-menu-selected);
+}
+
+.nav-bar li .fawesome {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 2.5rem;
+    padding: 0 0.5rem 0 0;
+    color: silver;
+}
+
+.nav-bar li:hover {
+    background-color: var(--bg-menu-hover);
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: silver;
+}
+
+@media screen and (min-width: 720px) {
+    .nav-bar {
+        width: 20vw;
+        height: 100vw;
+    }
+}
