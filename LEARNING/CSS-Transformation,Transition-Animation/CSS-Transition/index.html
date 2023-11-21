@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transition</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                gap: 10px;
+            }
+
+            .box1,
+            .box2,
+            .box3,
+            .box4 {
+                width: 100px;
+                height: 100px;
+                background-color: lightseagreen;
+            }
+
+            .box1 {
+                transition: transform 0.5s;
+            }
+
+            .box1:hover {
+                transform: rotate(15deg);
+            }
+
+            .box2 {
+                transition: transform 0.5s linear;
+            }
+
+            .box2:hover {
+                transform: rotate(15deg);
+            }
+
+            .box3 {
+                transition: transform 0.5s ease-in;
+            }
+
+            .box3:hover {
+                transform: rotate(15deg);
+            }
+
+            .box4 {
+                /* transition: transform 0.5s cubic-bezier(0.02, 0.77, 0.95, 0.36); */
+                transition: transform 0.5s ease-out 0.5s, background-color 3s;
+            }
+
+            .box4:hover {
+                transform: rotate(15deg);
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </body>
+</html>
