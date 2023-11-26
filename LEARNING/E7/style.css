@@ -1,0 +1,66 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-box {
+    max-width: 500px;
+    font-size: 1.6rem;
+    border-radius: 30px;
+    overflow: hidden;
+    transform: rotate(-5deg);
+    transition: transform 0.25s linear;
+    box-shadow: 0 0px 20px #f9f9f9;
+}
+
+.card-box:hover {
+    transform: rotate(0);
+}
+
+.card-box:hover .card-img {
+    transform: scale(1.15);
+    transition: transform 0.25s linear;
+}
+
+.card-section {
+    background-color: white;
+    padding: 1rem 2rem;
+}
+
+.card-section:last-of-type {
+    background: rgb(116, 214, 144);
+    background: linear-gradient(
+        90deg,
+        rgba(116, 214, 144, 1) 0%,
+        rgba(92, 191, 187, 1) 100%
+    );
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.card-user-id {
+    margin: auto 0;
+    padding: 0 2rem;
+    color: white;
+}
+
+.card-img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+}

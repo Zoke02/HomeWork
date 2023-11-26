@@ -3,46 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login Website</title>
+        <title>Exercice 6</title>
         <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
-        />
     </head>
     <body>
-        <form
-            class="main-form"
-            action="https://jwe.obinet.at/login.php?key=wifi2023"
-            method="POST"
-        >
-            <h1>Please log in</h1>
-            <div>
+        <form class="form-signin" action="index.html" method="POST">
+            <h1>Please sign in</h1>
+            <div class="form-group">
                 <input
-                    type="text"
-                    name="username"
-                    placeholder="E-Mail or Username"
-                    minlength="4"
-                    maxlength="14"
+                    class="form-group-style"
+                    type="email"
+                    name="email"
+                    placeholder="Email adress"
+                    minlength="6"
+                    maxlength="50"
+                    autofocus
                 />
             </div>
-            <div>
+            <div class="form-group">
                 <input
+                    class="form-group-style"
                     type="password"
                     name="password"
                     placeholder="Password"
-                    minlength="4"
-                    maxlength="20"
+                    minlength="8"
+                    maxlength="50"
                 />
             </div>
-            <div>
-                <input type="checkbox" name="checkbox" />
-                <label for="checkbox">Remember Me</label>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me" />
+                <label for="remember-me">Remember me</label>
             </div>
-            <div>
-                <button type="submit">Submit</button>
-                <button type="reset">Clear All!</button>
-            </div>
+            <button class="btn-primary-style" type="submit">Sign In</button>
+            <p>Copyright &copy; 2023</p>
         </form>
     </body>
 </html>
