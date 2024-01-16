@@ -38,3 +38,7 @@ let defaultColor = 'Blue';
 let currentColor = userColor || defaultColor;
 
 console.log(currentColor);
+
+let x = 10;
+let y = x++;
+console.log(y);
