@@ -13,8 +13,8 @@ console.log(isAproved);
 let firstName = undefined;
 console.log(firstName);
 
-let solectedColor = null;
-console.log(solectedColor);
+let selectedColor = null;
+console.log(selectedColor);
 
 // Person Object
 
