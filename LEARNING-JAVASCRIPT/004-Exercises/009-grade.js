@@ -9,18 +9,13 @@ const grades = [90, 90, 80, 90, 50, 30];
 // 90-100 = A
 
 function calculateGrade(grades) {
-    let numberOfGrades = 1;
+    let numberOfGrades = 0;
     let sumOfGrades = 0;
     let averageGrade = 0;
-<<<<<<< HEAD
-    let message = 'Student grade is:';
-    console.log(grades);
-=======
     let message = 'Student Average Grade:';
->>>>>>> 98ea5373b7d57bb59f5fe8e4ca21ff579ad8215f
     for (let grade in grades) {
         // console.log(grade);
-        numberOfGrades = ++grade;
+        numberOfGrades = grade;
     }
     // console.log(numberOfGrades);
     for (let grade of grades) {
@@ -28,21 +23,12 @@ function calculateGrade(grades) {
     }
     // console.log(sumOfGrades);
     averageGrade = sumOfGrades / numberOfGrades;
-<<<<<<< HEAD
-    console.log(averageGrade);
-    if (averageGrade < 60) console.log(message, 'F');
-    else if (averageGrade < 70) console.log(message, 'D');
-    else if (averageGrade < 80) console.log(message, 'C');
-    else if (averageGrade < 90) console.log(message, 'B');
-    else console.log(message, 'A');
-=======
     // console.log(averageGrade);
     if (averageGrade >= 90) console.log(message, 'A');
     else if (averageGrade >= 80) console.log(message, 'B');
     else if (averageGrade >= 70) console.log(message, 'C');
     else if (averageGrade >= 60) console.log(message, 'D');
     else console.log(message, 'F');
->>>>>>> 98ea5373b7d57bb59f5fe8e4ca21ff579ad8215f
 }
 
 calculateGrade(grades);
