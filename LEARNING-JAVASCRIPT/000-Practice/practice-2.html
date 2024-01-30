@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Validation</title>
+
+        <style>
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="myForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+            <span id="usernameError" class="error"></span>
+
+            <br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <span id="emailError" class="error"></span>
+
+            <br />
+
+            <input type="submit" value="Submit" />
+        </form>
+        <script src="../../../HTML School/jwe23/vendor/jquery/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#myForm').submit(function (event) {
+                    // Prevent the default form submission
+                    event.preventDefault();
+
+                    // Clear previous error messages
+                    $('.error').text('');
+
+                    // Validate username
+                    let username = $('#username').val();
+                    if (username === '') {
+                        $('#usernameError').text('Username is required');
+                    }
+
+                    // Validate email
+                    let email = $('#email').val();
+                    if (email === '') {
+                        $('#emailError').text('Email is required');
+                    } else if (!isValidEmail(email)) {
+                        $('#emailError').text('Invalid email format');
+                    }
+
+                    // Perform additional validations as needed
+
+                    // If there are no errors, you can proceed with form submission
+                    if (
+                        username !== '' &&
+                        email !== '' &&
+                        isValidEmail(email)
+                    ) {
+                        alert('Form submitted successfully!');
+                    }
+                });
+
+                // Helper function to validate email format
+                function isValidEmail(email) {
+                    // Simple email validation regex
+                    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return emailRegex.test(email);
+                }
+            });
+        </script>
+    </body>
+</html>

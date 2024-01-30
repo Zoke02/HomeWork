@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery</title>
+        <style>
+            body * {
+                box-sizing: border-box;
+            }
+            #practice-1 {
+                width: 200px;
+                height: 145px;
+                background: lightcoral;
+                margin: 30px;
+            }
+            .btn-primary {
+                margin: 10px;
+                padding: 10px;
+                background: lightgreen;
+                border: none;
+            }
+            .text {
+                padding: 10px;
+                color: black;
+            }
+            #practice-2 {
+                width: 320px;
+                background: lightseagreen;
+            }
+
+            .img-primary {
+                width: 300px;
+                height: 300px;
+                margin: 10px;
+                object-fit: cover;
+            }
+            .btn-primary-2 {
+                margin: 10px;
+                padding: 10px;
+                background: lightgreen;
+                border: none;
+                display: block;
+                width: 300px;
+            }
+            .btn-primary-3 {
+                margin: 10px;
+                padding: 10px;
+                background: lightgreen;
+                border: none;
+                display: block;
+                width: 300px;
+            }
+            .visible {
+                display: block;
+            }
+            .invisible {
+                display: none;
+            }
+            .text-2 {
+                background: lightslategray;
+                padding: 20px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="practice-1">
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Delectus odit quo expedita?
+            </p>
+            <button class="btn-primary" type="button">
+                Change color of Text above.
+            </button>
+        </div>
+
+        <div id="practice-2">
+            <img
+                class="img-primary"
+                src="https://placehold.co/600x400"
+                alt=""
+            />
+            <button class="btn-primary-2" type="button">
+                Hide / Show the Image above.
+            </button>
+        </div>
+
+        <div id="practice-3">
+            <p class="text-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Nesciunt, quaerat perferendis! Tempore animi consequatur
+                voluptatibus?
+            </p>
+        </div>
+        <script src="../../../HTML School/jwe23/vendor/jquery/jquery-3.7.1.min.js"></script>
+        <script>
+            $('.btn-primary').on('click', function () {
+                let myText = $('.text');
+                myText.css('color', 'white');
+            });
+            $('.btn-primary-2').on('click', function () {
+                myImage = $('.img-primary');
+                myImage.toggle();
+            });
+
+            $('.text-2').after(`
+            <button class="btn-primary-3" type="button">
+                Change the Opacity of the background.
+            </button>
+            `);
+
+            $('.btn-primary-3').on('click', function () {
+                $('.text-2').animate(
+                    {
+                        opacity: 0.5,
+                        width: '550px',
+                    },
+                    1000
+                );
+            });
+        </script>
+    </body>
+</html>
