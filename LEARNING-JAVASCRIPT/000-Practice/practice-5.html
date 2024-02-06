@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="text">
+            <p class="first"></p>
+            <p class="second"></p>
+            <div class="third"></div>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+                <button type="button">Submit!</button>
+            </form>
+        </div>
+        <script src="../../../HTML School/jwe23/vendor/jquery/jquery-3.7.1.min.js"></script>
+        <script>
+            $('.text .first').text('This is a text');
+            $('.text .second').text('This is a second text');
+            $('.text .second').hide();
+            $('.text .second').show();
+            $('.text .third').html(
+                `<input type="checkbox" name="Text Three" id="checkbox" /><span id="span">One</span>`
+            );
+            $('#checkbox').click(function () {
+                $('#span').css('color', 'red');
+                $('#span').append('You Clicked Me!');
+                $('#span').prepend('You Clicked Me!').css('color', 'green');
+            });
+            $('button').click(function () {
+                let insidetext = $('#name').val();
+                console.log(insidetext);
+            });
+            
+        </script>
+    </body>
+</html>
