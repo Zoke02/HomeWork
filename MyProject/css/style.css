@@ -25,6 +25,7 @@ body {
     --emerald: #57cc99;
 }
 
+<<<<<<< HEAD
 /* Button */
 
 .btn {
@@ -37,6 +38,8 @@ body {
     color: white;
 }
 
+=======
+>>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
 /* Navigation Bar */
 
 .nav-bar {
@@ -47,14 +50,20 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+<<<<<<< HEAD
     border-bottom: var(--emerald) 5px solid;
+=======
+>>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
 }
 
 .logo {
     width: 10rem;
     height: 6rem;
     background: var(--verdigris);
+<<<<<<< HEAD
     border: var(--emerald) 2px solid;
+=======
+>>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
 }
 
 .icons {
@@ -69,6 +78,7 @@ body {
 }
 
 .icon-login {
+<<<<<<< HEAD
     width: 2.4rem;
 }
 
@@ -87,4 +97,7 @@ body {
     padding-bottom: 20dvh;
     padding-left: 1rem;
     padding-right: 1rem;
+=======
+    width: 2.5rem;
+>>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
 }
