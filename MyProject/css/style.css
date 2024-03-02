@@ -25,7 +25,17 @@ body {
     --emerald: #57cc99;
 }
 
-<<<<<<< HEAD
+/* Typography */
+
+h1 {
+    font-size: 4.5rem;
+    color: white;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
 /* Button */
 
 .btn {
@@ -38,8 +48,6 @@ body {
     color: white;
 }
 
-=======
->>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
 /* Navigation Bar */
 
 .nav-bar {
@@ -50,20 +58,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-<<<<<<< HEAD
     border-bottom: var(--emerald) 5px solid;
-=======
->>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
 }
 
 .logo {
     width: 10rem;
     height: 6rem;
     background: var(--verdigris);
-<<<<<<< HEAD
-    border: var(--emerald) 2px solid;
-=======
->>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
+    border: var(--emerald) 4px solid;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 60%;
 }
 
 .icons {
@@ -78,7 +82,6 @@ body {
 }
 
 .icon-login {
-<<<<<<< HEAD
     width: 2.4rem;
 }
 
@@ -91,13 +94,12 @@ body {
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     gap: 5rem;
-    padding-bottom: 20dvh;
+    padding-bottom: 10dvh;
     padding-left: 1rem;
-    padding-right: 1rem;
-=======
-    width: 2.5rem;
->>>>>>> 8c77b36230aa5a9da1b0c2bf08c4152f8669da0f
+    padding-right: 10dvh;
+    text-align: end;
 }
